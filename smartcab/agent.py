@@ -147,8 +147,8 @@ class LearningAgent(Agent):
 					if maxQ == self.Q[state][act]:	
 						valid_actions.append(act)
 				action = random.choice(valid_actions)
-		# else:
-		# 	action = random.choice(self.valid_actions)
+		else:
+		 	action = random.choice(self.valid_actions)
 
 	return action
 
